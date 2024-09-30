@@ -1,0 +1,296 @@
+body{
+    
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      
+}
+header{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1)
+
+}
+#navbar .container-fluid #navbarSupportedContent ul li a{
+    font-family: "Roboto", system-ui;
+  font-weight: 700;
+  font-style: italic;
+  
+}
+/*********************carouse**********************/
+#carouselExample{
+    padding-top: 1rem;
+    width: 80%;
+    margin: auto;
+}
+#carouselExample .carousel-inner img{
+    height: 450px;
+}
+
+.container1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container1 .card{
+    width: 400px;
+    margin: 5px;
+    border:none;
+}
+.container1 .card img{
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    filter: contrast(1.2) brightness(1.1);
+
+}
+
+.container-principal {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden; /* Oculta el desbordamiento del carrusel */
+}
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.container-principal .card {
+    flex: 0 0 33.3333%; /* Muestra 3 tarjetas en un solo carrusel */
+    box-sizing: border-box;
+    padding: 10px; /* Espaciado entre tarjetas */
+    border: none;
+    margin: 2px;
+}
+
+
+
+.container-principal .card img {
+
+    width: 60%;/* Cambia este valor para ajustar el ancho */
+    height: 240px; /* Mantiene la relación de aspecto */
+    object-fit: cover; /* Cubre el área del contenedor sin distorsionar */
+    margin: 0 auto; /* Centra la imagen */
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+.carousel-wrapper a{
+    color: white;
+    font-family: "Roboto", system-ui;
+    font-weight: 700;
+    font-style: italic;
+}
+.container1 .card .card-body a{
+color: white;
+font-family: "Roboto", system-ui;
+font-weight: 700;
+font-style: italic;
+}
+.container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    background-color: rgb(245, 245, 245);
+}
+
+.container3 .title-container,
+.container3 .text-containe
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.container3 .container3-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container3 .container3-card .card{
+    width: 300px;
+    background-color: transparent;
+    margin: 20px;
+    text-align: center;
+    border: none;
+}
+.container3 .container3-card .card img{
+    height: 200px;
+    filter: contrast(1.2) brightness(1.1);
+    border: 1px solid black;
+
+}
+
+.container3 .container3-card .card-body a{
+    text-decoration: none;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    padding: 7px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.container3-card .card .card-title{
+    padding: 2rem;
+}
+/*----------footer----------------------*/
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .footer-informacion{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  
+  }
+  .footer .footer-informacion .footer-li-uno ul,
+  .footer .footer-informacion  ul{
+      list-style: none;
+  }
+
+  .footer .footer-informacion .footer-li-uno ul li,
+  .footer .footer-informacion  ul li{
+      list-style: none;
+      margin-top: 20px;
+  }
+  .footer .footer-informacion .footer-li-uno ul li a,
+  .footer .footer-informacion  ul li a{
+     text-decoration: none;
+     color: rgba(41, 41, 41, 0.753);
+     font-family: "Roboto", sans-serif;
+     font-weight: 500;
+     font-style: normal;
+  }
+  
+  
+
+  .super-intendecia{
+    width: 50%;
+  }
+
+.super-intendecia img{
+    width: 100px;
+}
+
+footer .terminos{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .terminos ul{
+  display: flex;
+  list-style: none;
+}
+footer .terminos li{
+ border-left: 1px solid rgb(238, 236, 236);
+ margin-left: 20px;
+ font-family: "Roboto", sans-serif;
+ font-weight: 900;
+ font-style: normal;
+}
+
+
+/**
+/* Responsive styles */
+@media (max-width: 768px) {
+    #carouselExample{
+        padding: 0;
+        width: 100%;
+        margin: auto;
+    }
+    .container1 .card{
+        width: 100%;
+    }
+    .container1 .card img{
+        width: 50%;
+        height: 250px;
+        margin: auto;
+        filter: contrast(1.2) brightness(1.1);
+
+    }
+    .container-principal .card {
+        flex: 0 0 100%; /* Muestra una tarjeta por fila */
+        padding: 5px; /* Reduce el espaciado entre tarjetas */
+    }
+
+    .container-principal .card img {
+        max-width: 60%; /* Reduce aún más el tamaño de la imagen en pantallas pequeñas */
+    }
+    #carouselExample .carousel-inner img{
+        height: 350px;
+    }
+    footer .terminos{
+        justify-content: normal;
+       }
+       footer .terminos ul{
+         display: flex;
+         list-style: none;
+         flex-direction: column;
+   
+       }
+       footer .terminos li{
+         margin-top: 20px;;
+       }
+}
+
+/* Para pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .container-principal .card {
+        flex: 0 0 50%; /* Muestra dos tarjetas por fila en pantallas medianas */
+        padding: 8px; /* Ajusta el espaciado entre tarjetas */
+    }
+
+    .container-principal .card img {
+        max-width: 70%; /* Ajusta el tamaño de la imagen en pantallas medianas */
+    }
+    #carouselExample .carousel-inner img{
+        height: 450px;
+    }
+    footer .terminos{
+        justify-content: normal;
+       }
+       footer .terminos ul{
+         display: flex;
+         list-style: none;
+         flex-direction: column;
+   
+       }
+       footer .terminos li{
+         margin-top: 20px;;
+       }
+}
